@@ -29,16 +29,16 @@ const CertifiedSchools: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 gap-y-6 items-center">
           {schools.map((school, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200 group"
+              className="flex items-center justify-center p-2 md:p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200 group"
             >
               <img
                 src={school.logo}
                 alt={school.name}
-                className="max-h-12 max-w-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
+                className="max-w-[90px] md:max-w-[120px] h-auto mx-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100"
               />
             </div>
           ))}
