@@ -1,0 +1,145 @@
+.so-section {
+  background: transparent;
+  padding: 0;
+}
+
+.so-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 0 0 0;
+  position: relative;
+}
+
+.so-title {
+  color: #23272F;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.5px;
+}
+
+.so-subtitle {
+  color: #6B7280;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+.so-cards-wrapper {
+  position: relative;
+  min-height: 220px;
+  margin-bottom: 2.5rem;
+}
+
+.so-card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px 0 rgba(36, 42, 66, 0.18);
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px 28px;
+  z-index: 1;
+  border: none;
+  transition: box-shadow 0.2s;
+}
+.so-card-0 {
+  top: 0;
+  z-index: 3;
+}
+.so-card-1 {
+  top: 38px;
+  left: 32px;
+  z-index: 2;
+}
+.so-card-2 {
+  top: 76px;
+  left: 64px;
+  z-index: 1;
+}
+
+.so-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-top: 2px;
+  font-size: 1.3rem;
+}
+.so-icon-green {
+  background: #E6F9F2;
+  color: #10B981;
+}
+.so-icon-blue {
+  background: #E6F0FA;
+  color: #2563EB;
+}
+.so-icon-navy {
+  background: #F0F2F6;
+  color: #1B365D;
+}
+
+.so-card-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #23272F;
+  margin-bottom: 2px;
+}
+.so-card-desc {
+  color: #6B7280;
+  font-size: 0.98rem;
+  font-weight: 400;
+}
+
+.so-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #002855;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 16px 32px;
+  box-shadow: 0 6px 24px 0 rgba(36, 42, 66, 0.18);
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+.so-btn:hover {
+  background: #001a3d;
+  transform: scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .so-card, .so-card-0, .so-card-1, .so-card-2 {
+    width: 98%;
+    left: 0 !important;
+    max-width: 98vw;
+  }
+  .so-card-1 {
+    top: 38px;
+    left: 12px;
+  }
+  .so-card-2 {
+    top: 76px;
+    left: 24px;
+  }
+  .so-btn {
+    position: static;
+    margin-top: 32px;
+    width: 100%;
+    justify-content: center;
+  }
+} 
