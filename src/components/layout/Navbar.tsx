@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-[#002855] w-full h-[70px] opacity-100 sticky top-0 z-50">
-      <div className="max-w-screen-2xl mx-auto px-4 flex items-center justify-between h-[70px]" style={{ width: '1440px' }}>
+      <div className="max-w-screen-2xl mx-auto px-2 md:px-4 flex items-center justify-between h-[70px] min-w-0" style={{ width: '100%' }}>
         {/* Logo */}
         <div className="flex-shrink-0 flex items-center">
           <div className="text-xl font-bold text-white">IQS Authority</div>
